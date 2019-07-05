@@ -3,7 +3,14 @@
 @section('title', 'Thelicham portal | Manage Subscribers')
 
 @section('content_header')
-    <h1>Manage subscribers</h1>
+    <h1>Manage subscribers
+        <small>Beta</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/admin/subscribers">Subscribers</a></li>
+        <li class="active"><a href="/admin">Manage</a></li>
+    </ol>
 @stop
 
 @section('content')
@@ -19,6 +26,12 @@
                   <div class="input-group">
                     <input type="text" name="name" class="form-control" placeholder="Full name">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  </div>
+                  <br>
+
+                  <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="Valid email address">
+                    <span class="input-group-addon">@</span>
                   </div>
                   <br>
 
@@ -47,20 +60,8 @@
                 <br>
 
                  <div class="input-group">
-                    <input type="text" name="district" class="form-control" placeholder="District">
-                    <span class="input-group-addon">D</span>
-                </div>
-                <br>
-
-                 <div class="input-group">
                     <input type="text" name="post" class="form-control" placeholder="Post">
                     <span class="input-group-addon">P</span>
-                </div>
-                <br>
-
-                 <div class="input-group">
-                    <input type="text" name="rms" class="form-control" placeholder="RMS">
-                    <span class="input-group-addon">R</span>
                 </div>
                 <br>
 
@@ -71,7 +72,7 @@
                 <br>
 
                 <div class="form-group">
-                    <select name="duration" id="duration" class="form-control">
+                    <select name="credits" id="duration" class="form-control">
                         <option value="">Choose duration</option>
                         <option value="1">1 Month</option>
                         <option value="2">2 Months</option>

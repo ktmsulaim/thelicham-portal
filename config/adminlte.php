@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Thelicham',
+    'title' => 'Thelicham Portal',
 
     'title_prefix' => '',
 
@@ -139,8 +139,8 @@ return [
                 'url'     => '/admin/pincodes/',
             ],
             [
-                'text'    => 'Manage pincodes',
-                'url'     => '/admin/pincodes/manage'
+                'text'    => 'Pincode requests',
+                'url'     => '/admin/manage/pincodes'
             ]]
         ],
         [
@@ -158,9 +158,10 @@ return [
         [
             'text'        => 'Users',
             'icon'        => 'users',
+            'can'         => 'admin',
             'submenu'     => [[
                 'text'    => 'All users',
-                'url'     => '/admin/users',
+                'url'     => '/admin/users'
             ],
             [
                 'text'    => 'Add user',

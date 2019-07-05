@@ -27,7 +27,9 @@ Route::group(['middleware' => 'admin'], function () {
 
     Route::resource('/admin/subscribers', 'AdminSubscribersController');
     Route::resource('/admin/users', 'AdminUsersController');
+    Route::resource('/admin/pincodes', 'AdminPincodesController');
 
     Route::get('/admin/manage/subscribers', 'AdminSubscribersController@manage');
+    Route::get('/admin/manage/pincodes', 'AdminPincodesController@manage');
 
 });

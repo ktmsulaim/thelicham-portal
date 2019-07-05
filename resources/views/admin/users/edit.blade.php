@@ -26,7 +26,7 @@
                   </div>
                   <div class="form-group">
                     {!! Form::label('role_id', 'Role', ['class'=>'control-form']) !!}
-                    {!! Form::select('role_id', array(''=>'Select role', '1'=>'Admin', '2'=>'Author', '3'=>'Subscriber'), null, ['class'=>'form-control']) !!}
+                    {!! Form::select('role_id', array(''=>'Select role', '1'=>'Admin', '2'=>'Client', '3'=>'Subscriber'), null, ['class'=>'form-control']) !!}
                   </div>
                   <div class="form-group">
                     {!! Form::label('is_active', 'Status', ['class'=>'control-form']) !!}

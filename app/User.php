@@ -52,4 +52,8 @@ class User extends Authenticatable
 
         return false;
     }
+
+    public function subscriber(){
+        return $this->hasOne('App\Subscriber');
+    }
 }
